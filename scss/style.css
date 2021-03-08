@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+  margin: 1em;
+  color: #0401b8;
+}
+/*# sourceMappingURL=style.css.map */
