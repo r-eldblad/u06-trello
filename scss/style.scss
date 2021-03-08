@@ -6,6 +6,34 @@
 }
 
 h1 {
+  text-align: center;
   margin: 1em;
   color: rgb(4, 1, 184);
+}
+
+h2 {
+  margin: 1em;
+}
+
+ol {
+  margin: 1em;
+  padding: 1em;
+
+  li {
+    margin: 0.5em;
+    padding: 0.5em;
+    list-style-type: none;
+    border: 1px solid black;
+  }
+}
+
+#columns {
+  text-align: center;
+
+  fieldset {
+    display: inline;
+    margin-left: 0 auto;
+    text-align: center;
+    width: 15%;
+  }
 }
