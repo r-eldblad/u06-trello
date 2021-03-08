@@ -9,11 +9,7 @@
 h1 {
   text-align: center;
   margin: 1em;
-  color: #0401b8;
-}
-
-h2 {
-  margin: 1em;
+  color: #4542e4;
 }
 
 ol {
@@ -37,5 +33,9 @@ ol li {
   margin-left: 0 auto;
   text-align: center;
   width: 15%;
+}
+
+#columns fieldset h2 {
+  margin: 1em;
 }
 /*# sourceMappingURL=style.css.map */
