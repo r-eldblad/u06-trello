@@ -24,15 +24,30 @@ ol li {
   border: 1px solid black;
 }
 
+#tabs-1 {
+  color: white;
+}
+
 #columns {
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+#columns .card {
+  cursor: pointer;
 }
 
 #columns fieldset {
   display: inline;
-  margin-left: 0 auto;
+  margin: 1em;
   text-align: center;
-  width: 15%;
+  width: 300px;
+  height: 500px;
 }
 
 #columns fieldset h2 {

@@ -575,6 +575,10 @@ button.ui-button::-moz-focus-inner {
   left: 0;
   padding: 0.2em;
   outline: 0;
+  border: 5px solid rgb(78, 78, 78);
+  border-radius: 10px;
+  background-color: rgb(69, 66, 228);
+  color: white;
 }
 .ui-dialog .ui-dialog-titlebar {
   padding: 0.4em 1em;
@@ -847,10 +851,12 @@ button.ui-button::-moz-focus-inner {
   float: left;
   padding: 0.5em 1em;
   text-decoration: none;
+  color: rgb(255, 255, 255);
 }
 .ui-tabs .ui-tabs-nav li.ui-tabs-active {
   margin-bottom: -1px;
   padding-bottom: 1px;
+  background-color: rgb(98, 0, 0);
 }
 .ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor,
 .ui-tabs .ui-tabs-nav li.ui-state-disabled .ui-tabs-anchor,

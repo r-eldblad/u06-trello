@@ -1,6 +1,27 @@
+<!-- Som användare ska man kunna göra följande:
+
+Kunna dra "kort" mellan tre olika "kolumner" (todo, doing, done) (KLAR)
+Kunna klicka på ett kort för att se dess information (dialog) (KLAR)
+Kunna titta i olika flikar inom ett kort för att få mer information om det (tabs) (KlAR)
+Kunna sätta en deadline på varje kort (datepicker) (KLAR)
+
+
+Krav
+Den färdiga lösningen måste implementera:
+JQuery UI datepicker
+JQuery UI draggable och droppable (eller sortable)
+JQuery UI dialog
+JQuery UI tabs
+
+
+Minst två valfria effekter från JQuery UI
+Minst en egenskapad enkel JQuery UI Widget
+Layout/disposition helt skapad från CSS-ramverk (valfritt) -->
+
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8" />
     <title>U06 Trello</title>
     <link href="external/jquery/jquery-ui.css" rel="stylesheet" />
@@ -14,36 +35,34 @@
       <fieldset id="first-column">
         <h2>To do</h2>
         <ol id="todo" class="listOfCards">
-          <li>Hello</li>
-          <li>Whats up</li>
-          <li>Yes</li>
-          <li>Greed</li>
-          <li>Hospital</li>
-          <li>MMM</li>
+          <li class="card">Wash the dishes</li>
+          <div id="dialog" title="Description">
+            <div id="tabs">
+              <ul>
+                <li><a href="#tab-1">Description</a></li>
+                <li><a href="#tab-2">Deadline</a></li>
+              </ul>
+              <div id="tab-1">
+                  <p>This is a task.</p>
+              </div>
+              <div id="tab-2">
+                <p>
+                  <p id="deadline">Deadline: <input type="text" id="datepicker" /></p>
+                </p>
+              </div>
+            </div>
+            <br />
+          </div>
         </ol>
       </fieldset>
 
       <fieldset id="second-column">
         <h2>Doing</h2>
-        <ol id="doing" class="listOfCards">
-          <li>Hello</li>
-          <li>Whats up</li>
-          <li>Yes</li>
-          <li>Greed</li>
-          <li>Hospital</li>
-          <li>MMM</li>
-        </ol>
+        <ol id="doing" class="listOfCards"></ol>
       </fieldset>
       <fieldset id="third-column">
         <h2>Done</h2>
-        <ol id="done" class="listOfCards">
-          <li>Hello</li>
-          <li>Whats up</li>
-          <li>Yes</li>
-          <li>Greed</li>
-          <li>Hospital</li>
-          <li>MMM</li>
-        </ol>
+        <ol id="done" class="listOfCards"></ol>
       </fieldset>
     </main>
 
