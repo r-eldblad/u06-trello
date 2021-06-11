@@ -28,26 +28,13 @@ ol li {
   color: white;
 }
 
-#columns {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 100%;
-}
-
 #columns .card {
   cursor: pointer;
 }
 
 #columns fieldset {
-  display: inline;
   margin: 1em;
   text-align: center;
-  width: 300px;
-  height: 500px;
 }
 
 #columns fieldset h2 {

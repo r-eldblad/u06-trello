@@ -28,20 +28,13 @@ ol {
 }
 
 #columns {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-
   .card {
     cursor: pointer;
   }
 
   fieldset {
-    display: inline;
     margin: 1em;
     text-align: center;
-    width: 300px;
-    height: 500px;
 
     h2 {
       margin: 1em;

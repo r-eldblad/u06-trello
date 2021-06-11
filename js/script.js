@@ -7,6 +7,10 @@ $(document).ready(function () {
 
   $("#dialog").hide();
 
+  $("h1").click(function () {
+    $("h1").effect("shake");
+  });
+
   $(".card").click(function () {
     $("#dialog")
       .dialog({
@@ -28,4 +32,14 @@ $(document).ready(function () {
     $("#datepicker").datepicker();
     $("#tabs").tabs();
   });
+
+  $.widget("complete"),
+    {
+      _create: function () {
+        const progress = "<em>Klar</em>";
+        this.element.addClass("complete").append(progress);
+      },
+    };
+
+  $(".card em").progressbar();
 });
